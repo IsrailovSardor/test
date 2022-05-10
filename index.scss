@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #E5E5E5;
     width: 100%;
@@ -296,7 +302,7 @@ body {
         }
 
         .works-carousel {
-            width: 500px;
+            max-width: 500px;
             height: 650px;
             position: relative;
 
@@ -321,7 +327,7 @@ body {
                     background-color: #949BA5;
                     border-radius: 50%;
                 }
-                
+
                 .owl-prev {
                     display: flex;
                     align-items: center;
@@ -334,19 +340,17 @@ body {
                     border-radius: 50%;
                 }
             }
+
             .carousel {
                 width: 100%;
                 height: 650px;
-                background: #F6F6F6;
                 border-radius: 14px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 position: relative;
 
                 .carousel_img {
-                    height: 387px;
-                    width: 351px;
+                    border-radius: 14px;
+                    height: 100%;
+                    width: 100%;
                 }
 
                 .carousel_row {
@@ -375,7 +379,6 @@ body {
             height: 100%;
             display: flex;
             flex-direction: column;
-
 
             .inform_title {
                 font-family: 'Manrope';
@@ -988,7 +991,7 @@ body {
                     display: flex;
 
                     .smile_ret1 {
-                        margin-right: 54px;
+                        margin-right: 0;
 
                         .smile_ret1_text {
                             font-family: 'Manrope';
@@ -1022,6 +1025,7 @@ body {
                     }
 
                     .smile_ret2 {
+                        margin-left: 54px;
                         width: 409px;
 
                         .line_text {
@@ -1164,6 +1168,7 @@ body {
             }
 
             .smile_row {
+                margin-top: 15px;
                 max-width: 500px;
                 margin-left: 40px;
 
@@ -1255,13 +1260,13 @@ body {
 
 .reviews {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: #E5E5E5;
     padding: 0 60px;
     margin-bottom: 80px;
 
     .wrapper {
-        height: 979px;
+        height: 100%;
         width: 100%;
         border-radius: 14px;
         background-color: white;
@@ -1485,7 +1490,7 @@ body {
 }
 
 .footer {
-    height: 817px;
+    height: 100%;
     width: 100%;
     background-color: white;
     padding: 67px 0 90px 60px;
@@ -1546,7 +1551,7 @@ body {
         }
 
         .one_block1 {
-            margin-left: 25px;
+            margin-left: 0;
 
             p {
                 font-family: 'Manrope';
@@ -1660,12 +1665,12 @@ body {
     }
 
     .three {
-        height: 130px;
         display: flex;
         flex-wrap: wrap;
+        height: auto;
 
         .block {
-            height: 100%;
+
             width: 176px;
             display: flex;
             align-items: flex-end;
@@ -1682,7 +1687,7 @@ body {
         }
 
         .block1 {
-            height: 100%;
+            margin-top: 30px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -1843,13 +1848,18 @@ body {
     }
 
     .reviews {
+        height: 100%;
         padding: 0 16px;
-        margin-bottom: 0;
+        margin-bottom: 40px;
         margin-top: 40px;
 
         .wrapper {
-            padding: 16 16px;
+            padding: 16px 16px;
         }
+    }
+
+    .footer {
+        height: 100%;
     }
 }
 
@@ -2022,7 +2032,7 @@ body {
                             background-color: #949BA5;
                             border-radius: 50%;
                         }
-                        
+
                         .owl-prev {
                             display: flex;
                             align-items: center;
@@ -2039,17 +2049,18 @@ body {
                     .carousel {
                         max-width: 400px;
                         min-width: 280px;
-                        height: 500px;
+                        height: 450px;
                         background: #F6F6F6;
                         border-radius: 14px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         position: relative;
+                        margin: 15px 0;
 
                         .carousel_img {
-                            height: 387px;
-                            width: 351px;
+                            height: 100%;
+                            width: 100%;
                         }
 
                         .carousel_row {
@@ -2373,6 +2384,7 @@ body {
     }
 
     .footer {
+        height: 100%;
         padding: 0 16px;
         border-top: 0px dashed rgba(106, 125, 154, 0.6);
         position: relative;
@@ -2387,9 +2399,6 @@ body {
             .one_block {
                 width: 50%;
                 margin-right: 0;
-
-
-
             }
 
             .one_block1 {

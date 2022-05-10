@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: #E5E5E5;
   width: 100%;
@@ -377,7 +384,7 @@ body * {
 }
 
 .header .card .works-carousel {
-  width: 500px;
+  max-width: 500px;
   height: 650px;
   position: relative;
 }
@@ -436,23 +443,14 @@ body * {
 .header .card .works-carousel .carousel {
   width: 100%;
   height: 650px;
-  background: #F6F6F6;
   border-radius: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
 }
 
 .header .card .works-carousel .carousel .carousel_img {
-  height: 387px;
-  width: 351px;
+  border-radius: 14px;
+  height: 100%;
+  width: 100%;
 }
 
 .header .card .works-carousel .carousel .carousel_row {
@@ -1171,7 +1169,7 @@ body * {
 }
 
 .smile .smile_wrapper .flex_wrapper .smile_reting .flex .smile_ret1 {
-  margin-right: 54px;
+  margin-right: 0;
 }
 
 .smile .smile_wrapper .flex_wrapper .smile_reting .flex .smile_ret1 .smile_ret1_text {
@@ -1208,6 +1206,7 @@ body * {
 }
 
 .smile .smile_wrapper .flex_wrapper .smile_reting .flex .smile_ret2 {
+  margin-left: 54px;
   width: 409px;
 }
 
@@ -1352,6 +1351,7 @@ body * {
 }
 
 .smile .smile_wrapper .flex_wrapper .smile_row {
+  margin-top: 15px;
   max-width: 500px;
   margin-left: 40px;
 }
@@ -1459,14 +1459,14 @@ body * {
 
 .reviews {
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: #E5E5E5;
   padding: 0 60px;
   margin-bottom: 80px;
 }
 
 .reviews .wrapper {
-  height: 979px;
+  height: 100%;
   width: 100%;
   border-radius: 14px;
   background-color: white;
@@ -1713,7 +1713,7 @@ body * {
 }
 
 .footer {
-  height: 817px;
+  height: 100%;
   width: 100%;
   background-color: white;
   padding: 67px 0 90px 60px;
@@ -1782,7 +1782,7 @@ body * {
 }
 
 .footer .one .one_block1 {
-  margin-left: 25px;
+  margin-left: 0;
 }
 
 .footer .one .one_block1 p {
@@ -1902,16 +1902,15 @@ body * {
 }
 
 .footer .three {
-  height: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: auto;
 }
 
 .footer .three .block {
-  height: 100%;
   width: 176px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1932,7 +1931,7 @@ body * {
 }
 
 .footer .three .block1 {
-  height: 100%;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2073,12 +2072,16 @@ body * {
     margin-left: 0px;
   }
   .reviews {
+    height: 100%;
     padding: 0 16px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
     margin-top: 40px;
   }
   .reviews .wrapper {
-    padding: 16 16px;
+    padding: 16px 16px;
+  }
+  .footer {
+    height: 100%;
   }
 }
 
@@ -2283,7 +2286,7 @@ body * {
   .header .card .inform .mobile-carousel .carousel {
     max-width: 400px;
     min-width: 280px;
-    height: 500px;
+    height: 450px;
     background: #F6F6F6;
     border-radius: 14px;
     display: -webkit-box;
@@ -2296,10 +2299,11 @@ body * {
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
+    margin: 15px 0;
   }
   .header .card .inform .mobile-carousel .carousel .carousel_img {
-    height: 387px;
-    width: 351px;
+    height: 100%;
+    width: 100%;
   }
   .header .card .inform .mobile-carousel .carousel .carousel_row {
     position: absolute;
@@ -2575,6 +2579,7 @@ body * {
     padding-bottom: 40px;
   }
   .footer {
+    height: 100%;
     padding: 0 16px;
     border-top: 0px dashed rgba(106, 125, 154, 0.6);
     position: relative;
