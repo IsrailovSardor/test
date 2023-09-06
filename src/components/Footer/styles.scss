@@ -1,0 +1,79 @@
+@import '../../styles/_variable.scss';
+
+.footer {
+    background: #3D4050;
+    padding: 30px 20px;
+
+    .footer__content {
+        margin: 0 auto;
+        max-width: $xl;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        .footer__copyright {
+            font: 400 13px/16px "Lato";
+            color: $white;
+        }
+
+        .footer__line {
+            background: $gray;
+            width: 1px;
+            height: 18px;
+        }
+
+        .footer__list {
+            display: flex;
+            align-items: center;
+            gap: 38px;
+
+            .footer__item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .footer__title {
+                    font: 400 13px/16px "Lato";
+                    color: $gray;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1035.98px) {
+    .footer {
+        .footer__content {
+            display: flex;
+            flex-wrap: wrap;
+
+            .footer__copyright {
+                width: 100%;
+            }
+
+            .footer__line {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer {
+        .footer__content {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 16px;
+
+            .footer__list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+        }
+    }
+}

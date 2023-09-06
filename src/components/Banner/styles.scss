@@ -1,0 +1,157 @@
+@import '../../styles/_variable.scss';
+
+.banner {
+    width: 100%;
+    background: url('../assets/images/banner.png');
+    background-position: center;
+    background-size: cover;
+    padding: 202px 20px;
+
+    .banner__content {
+        margin: 0 auto;
+        max-width: $xl;
+        width: 100%;
+        display: grid;
+        gap: 80px;
+
+        .banner__text {
+            font: 800 48px/56px 'Raleway';
+            color: $black;
+            transition: 0.3s;
+            max-width: 780px;
+            width: 100%;
+
+            .banner__text-highlight {
+                color: $blue;
+            }
+
+            &:hover {
+                color: $blue;
+            }
+
+            &:hover>.banner__text-highlight {
+                color: $black;
+            }
+        }
+
+        .banner__list {
+            display: grid;
+            gap: 5px;
+
+            .banner__list-item {
+                // Lato
+                font: 400 20px/24px 'Raleway';
+                color: $black;
+            }
+
+            .banner__list-item:first-child {
+                // Lato
+                font: 700 20px/24px 'Raleway';
+                color: $black;
+                margin-bottom: 5px;
+            }
+        }
+
+        .banner__buttons {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .banner__button-more,
+            .banner__button-success {
+                width: 183px;
+                height: 43px;
+                border-radius: 4px;
+                cursor: pointer;
+                // Lato
+                font: 400 13px/16px 'Raleway';
+                transition: 0.3s;
+
+                &:hover {
+                    transform: scale(0.98);
+                }
+            }
+
+            .banner__button-success {
+                background: $blue;
+                border: 1px solid $white;
+                color: $white;
+            }
+
+            .banner__button-more {
+                background: $white;
+                border: 1px solid #6F6D7B;
+                color: #2A2B30;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .banner {
+        padding: 150px 20px;
+
+        .banner__content {
+            gap: 60px;
+
+            .banner__text {
+                max-width: 430px;
+                font: 800 32px/38px 'Raleway';
+            }
+
+            .banner__list {
+
+                .banner__list-item {
+                    font: 400 18px/24px 'Raleway';
+                }
+
+                .banner__list-item:first-child {
+                    font: 700 18px/24px 'Raleway';
+                }
+            }
+
+            .banner__buttons {
+
+                .banner__button-more,
+                .banner__button-success {
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner {
+        padding: 120px 20px;
+        background-position: 60% 50%;
+
+        .banner__content {
+            gap: 40px;
+
+            .banner__text {
+                font: 800 21px/27px "Raleway";
+            }
+
+            .banner__list {
+                .banner__list-item {
+                    font: 400 14px/18px "Raleway"
+                }
+
+                .banner__list-item:first-child {
+                    font: 700 14px/18px "Raleway"
+                }
+            }
+
+            .banner__buttons {
+                gap: 12px;
+
+                .banner__button-more,
+                .banner__button-success {
+                    height: 40px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
