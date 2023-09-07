@@ -57,13 +57,13 @@ export const Decoration = () => {
                     </p>
                     <p class="order-header__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
                 </div>
-                <div class="item-list">
+                <div class="order-list">
                     {listArr.map((item, index) => (
-                        <div class="item" key={index}>
-                            <div class="item-icon">
+                        <div class="order-list__item" key={index}>
+                            <div class="order-list__item-icon">
                                 <img src={item.icon} alt="icon" />
                             </div>
-                            <p class="item-title">{item.title}</p>
+                            <p class="order-list__item-title">{item.title}</p>
                         </div>
                     ))}
                 </div>

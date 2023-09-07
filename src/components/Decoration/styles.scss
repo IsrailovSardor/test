@@ -34,18 +34,18 @@
         }
 
 
-        .item-list {
+        .order-list {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
 
-            .item {
+            .order-list__item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 20px;
 
-                .item-icon {
+                .order-list__item-icon {
                     background: #3E9CDC;
                     border: 5px solid #286690;
                     width: 100px;
@@ -76,7 +76,7 @@
                     }
                 }
 
-                .item-title {
+                .order-list__item-title {
                     max-width: 188px;
                     width: 100%;
                     text-align: center;
@@ -267,9 +267,9 @@
 @media (max-width: 991.98px) {
     .order {
         .order-form {
-            .item-list {
-                .item {
-                    .item-icon {
+            .order-list {
+                .order-list__item {
+                    .order-list__item-icon {
                         width: 90px;
                         height: 90px;
 
@@ -296,15 +296,15 @@
                 }
             }
 
-            .item-list {
+            .order-list {
                 flex-direction: column;
                 gap: 16px;
 
-                .item {
+                .order-list__item {
                     width: 100%;
                     flex-direction: row;
 
-                    .item-icon {
+                    .order-list__item-icon {
                         max-width: 60px;
                         min-width: 60px;
                         height: 60px;
@@ -318,7 +318,7 @@
                         }
                     }
 
-                    .item-title {
+                    .order-list__item-title {
                         max-width: 100%;
                         text-align: left;
                     }
@@ -390,10 +390,9 @@
                 }
             }
 
-
-            .item-list {
-                .item {
-                    .item-title {
+            .order-list {
+                .order-list__item {
+                    .order-list__item-title {
                         font: 400 16px/19px 'Lato';
                     }
                 }
@@ -404,7 +403,6 @@
 
                 .form-inputs {
                     gap: 16px;
-
 
                     .form-dropdown {
                         position: relative;
