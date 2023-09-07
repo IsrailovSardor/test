@@ -12,10 +12,6 @@ const footerList = [
     {title: "Web Money", icon: web, id: 2},
 ];
 
-const contactList = [
-    {title: "info@ipsum228.com", icon: email, id: 0},
-    {title: "Мы вконтакте", icon: vk, id: 1},
-];
 
 export const Footer = () => {
     return (
@@ -33,12 +29,14 @@ export const Footer = () => {
                 </div>
                 <div className="footer__line" />
                 <div className="footer__list">
-                    {contactList.map((item) => (
-                        <div key={item.id} className="footer__item">
-                            <img src={item.icon} alt="icon" className="footer__icon" />
-                            <p className="footer__title">{item.title}</p>
-                        </div>
-                    ))}
+                    <a href="mailto:info@ipsum228.com" className="footer__item">
+                        <img src={email} alt="icon" className="footer__icon" />
+                        <p className="footer__title">info@ipsum228.com</p>
+                    </a>
+                    <a href="https://vk.com/feed" className="footer__item">
+                        <img src={vk} alt="icon" className="footer__icon" />
+                        <p className="footer__title">Мы вконтакте</p>
+                    </a>
                 </div>
             </div>
         </footer>
